@@ -1,14 +1,6 @@
 # Mixar_Hiring_assignment
 This assignment focuses on understanding and implementing data preprocessing for 3D meshes, which is a fundamental step in our research workflow.
 
-Got it 👍 — here’s a **single, unified README.md** version for **Tasks 1, 2, and 3 together**, written as one continuous professional GitHub project description.
-
-It avoids repeating per-task sections and instead presents the entire 3D mesh pipeline — from understanding to quantization to reconstruction — as one cohesive workflow.
-
-You can copy-paste this directly into your GitHub repo’s `README.md`.
-
----
-
 # 🧩 3D Mesh Normalization, Quantization, and Reconstruction Pipeline
 
 ### 📚 **Overview**
@@ -18,8 +10,6 @@ It explores how different normalization strategies affect geometric fidelity aft
 
 The system processes `.obj` mesh files, computes geometric statistics, normalizes and quantizes vertex coordinates, reconstructs the meshes, and measures reconstruction errors — forming a foundation for 3D data compression and geometry-aware machine learning applications.
 
----
-
 ## ⚙️ **Core Objectives**
 
 1. Understand and visualize 3D mesh geometry.
@@ -27,8 +17,6 @@ The system processes `.obj` mesh files, computes geometric statistics, normalize
 3. Apply quantization and analyze reconstruction fidelity.
 4. Reconstruct meshes via dequantization and denormalization.
 5. Evaluate and visualize reconstruction errors across all methods.
-
----
 
 ## 🧠 **Pipeline Overview**
 
@@ -43,7 +31,6 @@ For each mesh:
 
 This establishes the baseline geometric properties of the dataset.
 
----
 
 ### **2️⃣ Normalization and Quantization**
 
@@ -61,8 +48,6 @@ After normalization:
 * Quantized meshes are **dequantized** back into floating-point coordinates.
 * Reconstructed meshes are saved for visual inspection.
 
----
-
 ### **3️⃣ Reconstruction and Error Evaluation**
 
 Once meshes are reconstructed:
@@ -72,8 +57,6 @@ Once meshes are reconstructed:
 * Plots per-axis and overall reconstruction errors for both normalization techniques.
 
 All numerical results are saved in `outputs/task3/` as `.csv` summaries and `.png` visualizations.
-
----
 
 ## 🧾 **Workflow Summary**
 
@@ -87,7 +70,6 @@ All numerical results are saved in `outputs/task3/` as `.csv` summaries and `.pn
 | **6** | Evaluation     | Compute MSE, MAE, Euclidean errors             |
 | **7** | Visualization  | Generate 3D plots and comparative graphs       |
 
----
 
 ## 📊 **Key Findings & Observations**
 
@@ -111,12 +93,11 @@ All numerical results are saved in `outputs/task3/` as `.csv` summaries and `.pn
   * Combining Min–Max normalization with uniform 1024-level quantization provides an optimal trade-off between simplicity and accuracy.
   * Unit-Sphere normalization remains preferable for orientation-variant datasets.
 
----
 
 ## 📁 **Directory Structure**
 
 ```
-.
+
 ├── meshes/                     # Input .obj meshes
 ├── outputs/
 │   ├── task1/                  # Mesh statistics and visualizations
@@ -127,8 +108,6 @@ All numerical results are saved in `outputs/task3/` as `.csv` summaries and `.pn
 ├── task3_reconstruction.ipynb
 └── README.md
 ```
-
----
 
 ## ▶️ **How to Run**
 
@@ -152,7 +131,6 @@ Run the notebook cells (or Python scripts) in order:
 
 All outputs (plots, CSVs, reconstructed meshes) will be automatically saved inside the `outputs/` folder.
 
----
 
 ## 📈 **Results Summary**
 
@@ -163,20 +141,8 @@ All outputs (plots, CSVs, reconstructed meshes) will be automatically saved insi
 
 Both methods achieve visually accurate reconstructions, with minimal perceptual difference at 1024 bins.
 
----
-
 ## 🧩 **Conclusion**
 
 The project successfully demonstrates a complete 3D mesh quantization pipeline, from geometric analysis to reconstruction evaluation.
 **Min–Max normalization** achieves the best numerical accuracy, while **Unit-Sphere normalization** ensures geometric invariance.
 Together, they provide valuable insight into how preprocessing strategies affect downstream 3D data compression, transmission, and learning.
-
----
-
-## 📜 **License**
-
-This project is released under the **MIT License** — free to use and adapt for research and academic purposes.
-
----
-
-Would you like me to include **preview images or example result plots** (using markdown `![image](path)` format) in this README so it looks more professional when viewed on GitHub?
